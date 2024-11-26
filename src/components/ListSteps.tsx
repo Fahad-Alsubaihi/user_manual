@@ -27,7 +27,10 @@ const Steps = ({ stepsData }: StepsProps) => {
   const handleNext = () => {
     setCurrentStep(currentStep + 1);
     if (currentStep < stepsData.length - 1) {
-    } else navigate(ROUTES.HOME);
+    } else {
+      setCurrentStep(0);
+      navigate(ROUTES.HOME);
+    }
     // console.log(stepsData.length);
   };
 
