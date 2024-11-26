@@ -118,6 +118,9 @@ const Steps = ({ stepsData }: StepsProps) => {
             className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-emerald-700"
           />
         </div>
+        <div className="text-end">
+          {currentStep}/{stepsData.length - 1}
+        </div>
       </div>
     </div>
   );

@@ -12,15 +12,15 @@ import kain from "../assets/images/kain.jpg";
 
 const stepsData: Step[] = [
   {
-    name: "general instruction",
+    name: "General Instruction",
     description:
-      "This manual is intended for users of the KAIN laser system. It provides a step-by-step guide to the operation of the system. The manual is divided into two sections: the first section covers the steps to turn on the system, while the second section covers the steps to turn off the system. Please follow the instructions carefully to ensure the safe and proper operation of the system.",
+      "This manual is intended for users of the KAIN femtosecondlaser system ( femtoLAB ). It provides a step-by-step guide to the operation of the system. Please follow the instructions carefully to ensure the safe and proper operation of the system.",
     images: [kain],
   },
   {
     name: "Step 1",
     description:
-      "Disable Z axis as in fig.29. Click right mouse button on 'Position Z' in SCA main window and press disable axis.",
+      "Disable Z axis as in as shown bellow. Click right mouse button on 'Position Z' in SCA main window and press disable axis.",
     images: [s1],
   },
   {
@@ -78,7 +78,10 @@ const stepsData: Step[] = [
   {
     name: "Step 13",
     description: "Wait for 10 min until temperature in OSC BAR stabilizes.",
-    images: [s6],
+    timer: {
+      duration: 600,
+    },
+    // images: [s6],
   },
   {
     name: "Step 14",
@@ -92,7 +95,7 @@ const stepsData: Step[] = [
   {
     name: "Step 16",
     description:
-      "Press and hold green “SYSTEM ON” button on front panel of electronics rack for 9 seconds.Mains contactor will be switched off.",
+      "Press and hold green “SYSTEM ON” button on front panel of electronics rack for 9 seconds. Mains contactor will be switched off.",
   },
 ];
 
